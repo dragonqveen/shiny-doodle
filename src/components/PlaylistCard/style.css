@@ -1,0 +1,45 @@
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas:
+        'cover title'
+        'cover tags';
+    gap: 16px;
+    padding: 12px;
+    text-align: left;
+    background-color: #1D1F3C;
+}
+
+.card-image {
+    background-size: cover;
+    height: 0;
+    padding-bottom: 150px;
+    width: 150px;
+    grid-area: cover;
+}
+
+.playlist-title {
+    grid-area: title;
+    color: #FFFFFF;
+}
+
+.tag-list {
+    grid-area: tags;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.tag-item {
+    margin-right: 12px;
+    color: #EA648D;
+    font-weight: bold;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tag-item::before {
+    content: '#';
+}
