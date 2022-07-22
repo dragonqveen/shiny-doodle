@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text');
 
 html, body, #root, .App {
-  height: 100%;
+  height: auto;
+  min-height: 100vh;
   font-family: 'Red Hat Text', sans-serif;
 }
 
 .App {
   text-align: center;
-  background-color: #060930;
+  background-color: #000000;
+  padding: 80px 0;
 }
 
 /*

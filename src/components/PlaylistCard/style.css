@@ -7,7 +7,15 @@
     gap: 16px;
     padding: 12px;
     text-align: left;
-    background-color: #1D1F3C;
+    background-color: rgba(255, 255, 255, 10%);
+    border: 1px solid transparent;
+    transition: 0.25s linear;
+}
+
+.card-wrapper:hover {
+    border-color: #5800FF;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0%);
 }
 
 .card-image {
@@ -16,11 +24,13 @@
     padding-bottom: 150px;
     width: 150px;
     grid-area: cover;
+    outline: 1px solid white;
 }
 
 .playlist-title {
     grid-area: title;
     color: #FFFFFF;
+    font-weight: normal;
 }
 
 .tag-list {
@@ -32,7 +42,7 @@
 
 .tag-item {
     margin-right: 12px;
-    color: #EA648D;
+    color: #E900FF;
     font-weight: bold;
 
     overflow: hidden;
