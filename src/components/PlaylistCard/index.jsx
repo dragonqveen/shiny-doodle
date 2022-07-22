@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './style.css';
 
-class PlaylistCard extends React.Component {
+class PlaylistCard extends Component {
     render() {
         return (
         <div className="card-wrapper">
