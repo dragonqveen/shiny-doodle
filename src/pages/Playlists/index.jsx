@@ -32,7 +32,7 @@ class Playlists extends Component {
                 <PlaylistCard 
                     key={index}
                     playlistTitle={playlist.name} 
-                    playlistCover={playlist.images[0].url} 
+                    playlistCover={playlist.images.length ? playlist.images[0].url : ''} 
                     tagList={playlist.description.match(/(?<=[#])([\w\S]*)/g) || []}
                 />
             ))}
